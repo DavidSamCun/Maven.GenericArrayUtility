@@ -19,13 +19,36 @@ public class ArrayUtility<T> {
 
         Integer count = 0;
 
-        for (T a: arrayToMerge) {
-            newList.add(a);
-        }
+        mergeArray(arrayToMerge);
         
         for (T a: newList) {
             if(a.equals(valueToEvaluate))
             count++;
+        }
+        return count;
+    }
+
+    public T getMostCommonFromMerge(T[] arrayToMerge) {
+
+        mergeArray(arrayToMerge);
+
+
+
+        return null;
+    }
+
+    public void mergeArray(T[] arrayToMerge){
+        for (T a: arrayToMerge) {
+            newList.add(a);
+        }
+    }
+
+    public Integer getNumberOfOccurrences(T valueToEvaluate) {
+        Integer count = 0;
+        for (T a: newList) {
+            if(a.equals(valueToEvaluate)){
+                count++;
+            }
         }
         return count;
     }
