@@ -31,7 +31,7 @@ public class CountDuplicatesInMergeTest {
         Integer expected = 6;
         Long[] inputArray = {1L, 2L, valueToEvaluate, 8L, 4L, 5L, valueToEvaluate, 0L, 9L, 8L, valueToEvaluate};
         Long[] arrayToMerge = {1L, 2L, valueToEvaluate, 8L, 4L, 5L, valueToEvaluate, 0L, 9L, 8L, valueToEvaluate};
-        ArrayUtility<Long> arrayUtility = new ArrayUtility<Long>(inputArray);
+        ArrayUtility<Long> arrayUtility = new ArrayUtility<>(inputArray);
 
         // When
         Integer actual = arrayUtility.countDuplicatesInMerge(arrayToMerge, valueToEvaluate);
